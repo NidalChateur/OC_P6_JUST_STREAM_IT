@@ -1,9 +1,18 @@
-$colour-primary: #15dea5;
-$colour-secondary: #001534;
-$colour-accent: #d6fff5;
-$colour-white: #fff;
-$colour-invalid: #db464b;
+$white_color: #e5e5e5;
 
-$heading-shadow-size: 0.55rem;
-$layout-margin: 6rem;
-$grid-gutter: $layout-margin * 0.25;
+$netflix-color: (
+  black_color: #141414,
+  white_color: $white_color,
+  red_color: #e50914,
+  darken_white: darken($white_color, 20%),
+  ligthen_white: lighten($white_color, 20%),
+  background_image: #494343,
+  category1: #f3f39e,
+  category2: #74e299,
+  category3: #ffca69,
+  category4: #459ce8,
+  category5: #824e82,
+);
+
+$netflix-font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+  sans-serif;

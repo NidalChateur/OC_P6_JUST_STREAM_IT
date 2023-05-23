@@ -1,14 +1,46 @@
-.header {
-    background: $colour-primary;
-    height: 10rem;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;   
-    &__logo {
-        font-size: 7rem;
-        color: $colour-secondary;
-        margin-left: 10rem;
-        @include heading-shadow($colour-white);
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.nav {
+  &__logo {
+    @include inline_block_relative;
+    top: 0.25rem;
+    color: map-get($netflix-color, red_color);
+    @include title_font_size;
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+  &__menu {
+    @include header_footer_style;
+  }
+
+  &__menu--normal {
+    font-weight: normal;
+  }
+  &__form {
+    @include inline_block_relative;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    &.clicked {
+      opacity: 1;
     }
+    &-input {
+      height: 1.5rem;
+      border: solid 0.2rem map-get($netflix-color, white_color);
+      &::placeholder {
+        @include text_font_size;
+      }
+    }
+    &-button {
+      height: 2rem;
+    }
+  }
+  &__search-icon {
+    @include logo-size;
+    @include inline_block_relative;
+    top: 0.5rem;
+    left: 51%;
+    cursor: pointer;
+  }
 }

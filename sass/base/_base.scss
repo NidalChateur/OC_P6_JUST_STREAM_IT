@@ -1,17 +1,13 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-html {
-  // 10px div by def of 16px
-  font-size: 62.5%;
-}
+@import "../utils/variables";
 
 body {
-  box-sizing: border-box;
-  background: $colour-secondary;
+  margin-left: 2%;
+  background-color: map-get($netflix-color, black_color);
+  font-family: $netflix-font-family;
+  font-weight: bold;
+  color: map-get($netflix-color, white_color);
+}
+
+a {
+  text-decoration: none;
 }

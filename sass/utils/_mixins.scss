@@ -1,38 +1,73 @@
-@mixin heading-shadow($colour:lightness-shift($colour-primary), $offset: $heading-shadow-size){
-    text-shadow: $offset $offset $colour;
+@import "./variables";
+
+@mixin inline_block_relative {
+  display: inline-block;
+  position: relative;
 }
 
-@mixin border($colour:$colour-primary) {
-    border: .1rem solid $colour;
+@mixin logo-size {
+  height: 1.5%;
+  width: 1.5%;
 }
 
-@mixin img-ratio {
-    width: 100%;
-        display: block;
-        overflow: hidden;
-        padding-top: 56.25%;
-        position: relative;
-        & img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            transform: translate(-50%, -50%);
-        }
+@mixin text_font_size {
+  font-size: 1rem;
 }
 
-@mixin btn {
-    padding: $grid-gutter;
-    @include border;
-    color: $colour-primary;
-    background: $colour-secondary;
-    cursor: pointer;
-    &:hover{
-        background: $colour-primary;
-        color: $colour-accent;
+@mixin header_footer_style {
+  color: map-get($netflix-color, white_color);
+  @include text_font_size;
+  margin-right: 1%;
+  &:hover {
+    transition: color 0.5s ease-in-out;
+    color: map-get($netflix-color, darken_white);
+  }
+}
+
+@mixin margin_left {
+  margin-left: 3%;
+}
+
+@mixin border_style($color, $border) {
+  #{$border}: 4px solid $color;
+}
+
+@mixin title_font_size {
+  font-size: 1.5rem;
+}
+
+@mixin legend($color, $top) {
+  @include inline_block_relative;
+  padding: 8px;
+  height: 3rem;
+  width: 17rem;
+  text-align: right;
+  @include border_style($color, border-bottom);
+  @include title_font_size;
+  top: $top;
+}
+@mixin category($number, $color) {
+  .category#{$number} {
+    display: flex;
+    &__best-film {
+      margin-top: 2%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      @include border_style($color, border);
+      width: 70%;
+      height: 15vh;
+      &-image {
+        display: flex;
+        align-items: center;
+        background-color: map-get($netflix-color, background_image);
+        height: 7rem;
+        cursor: pointer;
+      }
     }
-    &--full-width {
-        width: 100%;
-        margin: 0 auto;
+
+    &__legend {
+      @include legend($color, 6vh);
     }
+  }
 }

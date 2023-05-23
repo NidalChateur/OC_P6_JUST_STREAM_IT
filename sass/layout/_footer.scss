@@ -1,0 +1,13 @@
+@import "../utils/mixins";
+
+.footer {
+  &__margin-left {
+    @include inline_block_relative;
+    margin-left: 74%;
+    margin-top: 3%;
+  }
+  &__social-networks {
+    @include header_footer_style;
+    font-weight: lighter;
+  }
+}

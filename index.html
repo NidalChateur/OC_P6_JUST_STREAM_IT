@@ -4,8 +4,168 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./css/prefixed/style.css" /> -->
     <link rel="stylesheet" href="./css/prefixed/style.css" />
     <title>JustStreamIt</title>
+    <link rel="icon" href="./img/J.png" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="nav__logo">JUSTSTREAMIT</a>
+        <a href="index.html" class="nav__menu">Acceuil</a>
+        <a href="index.html" class="nav__menu nav__menu--normal">Séries</a>
+        <a href="index.html" class="nav__menu nav__menu--normal">Films</a>
+        <form action="" method="get" class="nav__form" id="myInput">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Titres, personnes, genres"
+            size="25"
+            class="nav__form-input"
+          />
+          <input type="submit" value=">" class="nav__form-button" />
+        </form>
+        <img
+          src="./img/loupe.png"
+          alt="logo_search"
+          class="nav__search-icon"
+          id="myImage"
+        />
+      </nav>
+
+      <!-- menu, logo ect ..  -->
+    </header>
+    <main>
+      <!-- pour créer un bouton "confirmer" qui peut être réutilisé pour voir la
+      suite liste des films -->
+      <!-- <input id="bouton" type="button" value="confirmer" /> -->
+      <section class="category1">
+        <div class="category1__best-film">
+          <div>
+            <h2 class="category1__best-film-title">Titre meilleur film</h2>
+            <p class="category1__best-film-description">
+              Description <br />Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Aut quibusdam doloribus delectus similique
+              molestiae maiores voluptas natus tempora illo iure expedita
+              cupiditate suscipit itaque corporis excepturi optio esse, veniam
+              iste?
+            </p>
+          </div>
+          <div>
+            <!-- remplacer la balise p par une balise img -->
+            <p class="category1__best-film-image">Image meilleur film</p>
+          </div>
+        </div>
+        <div class="category1__legend">
+          <p>Le meilleur film</p>
+        </div>
+
+        <!-- “Meilleur film” : Cette zone affiche la photo du film qui a la meilleur
+        note Imdb toutes catégories confondues, ainsi que son titre, un bouton
+        et le résumé du film sous le bouton. -->
+      </section>
+
+      <section class="category2">
+        <div class="category2__best-film">
+          <p class="category2__best-film-image">Image meilleur film 2</p>
+          <p class="category2__best-film-image">Image meilleur film 3</p>
+          <p class="category2__best-film-image">Image meilleur film 4</p>
+          <p class="category2__best-film-image">Image meilleur film 5</p>
+          <p class="category2__best-film-image">Image meilleur film 6</p>
+          <p class="category2__best-film-image">Image meilleur film 7</p>
+          <p class="category2__best-film-image">Image meilleur film 8</p>
+        </div>
+        <div class="category2__legend">
+          <p>Meilleurs films</p>
+        </div>
+      </section>
+
+      <!-- “Films les mieux notés” : Cette zone affiche les 7 autres films les
+        mieux notés toutes catégories confondues. On pourra les faire défiler
+        avec une flèche à gauche et à droite comme sur la maquette pour tous les
+        parcourir. -->
+      <section class="category3">
+        <div class="category3__best-film">
+          <p class="category3__best-film-image">Image meilleur film 2</p>
+          <p class="category3__best-film-image">Image meilleur film 3</p>
+          <p class="category3__best-film-image">Image meilleur film 4</p>
+          <p class="category3__best-film-image">Image meilleur film 5</p>
+          <p class="category3__best-film-image">Image meilleur film 6</p>
+          <p class="category3__best-film-image">Image meilleur film 7</p>
+          <p class="category3__best-film-image">Image meilleur film 8</p>
+        </div>
+        <div class="category3__legend">
+          <p>Catégorie</p>
+        </div>
+        <!-- “Catégorie 1” : Montre les 7 films les mieux notés d’une catégorie
+        donnée. -->
+      </section>
+      <section class="category4">
+        <div class="category4__best-film">
+          <p class="category4__best-film-image">Image meilleur film 2</p>
+          <p class="category4__best-film-image">Image meilleur film 3</p>
+          <p class="category4__best-film-image">Image meilleur film 4</p>
+          <p class="category4__best-film-image">Image meilleur film 5</p>
+          <p class="category4__best-film-image">Image meilleur film 6</p>
+          <p class="category4__best-film-image">Image meilleur film 7</p>
+          <p class="category4__best-film-image">Image meilleur film 8</p>
+        </div>
+        <div class="category4__legend">
+          <p>Catégorie</p>
+        </div>
+        <!-- “Catégorie 2” : Montre les 7 films les mieux notés d’une catégorie
+        donnée. -->
+      </section>
+      <section class="category5">
+        <div class="category5__best-film">
+          <p class="category5__best-film-image">Image meilleur film 2</p>
+          <p class="category5__best-film-image">Image meilleur film 3</p>
+          <p class="category5__best-film-image">Image meilleur film 4</p>
+          <p class="category5__best-film-image">Image meilleur film 5</p>
+          <p class="category5__best-film-image">Image meilleur film 6</p>
+          <p class="category5__best-film-image">Image meilleur film 7</p>
+          <p class="category5__best-film-image">Image meilleur film 8</p>
+        </div>
+        <div class="category5__legend">
+          <p>Catégorie</p>
+        </div>
+        <!-- “Catégorie 3” : Montre les 7 films les mieux notés d’une catégorie
+        donnée. -->
+      </section>
+    </main>
+    <footer>
+      <span class="footer__margin-left"></span>
+      <a href="mailto:juststreamit@contact.com" class="footer__social-networks"
+        >Nous contacter</a
+      >
+      <a
+        href="https://fr-fr.facebook.com/"
+        target="_blank"
+        class="footer__social-networks"
+        >Facebook</a
+      >
+      <a
+        href="https://www.instagram.com/"
+        target="_blank"
+        class="footer__social-networks"
+        >Instagram</a
+      >
+      <a
+        href="https://twitter.com/"
+        target="_blank"
+        class="footer__social-networks"
+        >Twitter</a
+      >
+      <a
+        href="https://www.youtube.com/"
+        target="_blank"
+        class="footer__social-networks"
+        >Youtube</a
+      >
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
 </html>

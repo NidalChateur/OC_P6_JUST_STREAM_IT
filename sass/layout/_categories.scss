@@ -1,0 +1,48 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.category1 {
+  display: flex;
+  &__best-film {
+    display: flex;
+    margin-top: 3%;
+    padding-top: 1%;
+    height: 30%;
+    width: 70%;
+    @include border_style(map-get($netflix-color, category1), border);
+    color: map-get($netflix-color, white_color);
+    &-title {
+      @include inline_block_relative;
+      bottom: 1.5rem;
+      @include margin_left;
+      cursor: pointer;
+    }
+    &-description {
+      font-weight: lighter;
+      @include margin_left;
+      width: 50%;
+    }
+    &-image {
+      @include inline_block_relative;
+      display: inline-block;
+      position: relative;
+      right: 3%;
+      bottom: 5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: map-get($netflix-color, background_image);
+      height: 200px;
+      width: 600px;
+      cursor: pointer;
+    }
+  }
+  &__legend {
+    @include legend(map-get($netflix-color, category1), 14vh);
+  }
+}
+
+@for $i from 2 through 5 {
+  @include category($i, map-get($netflix-color, category#{$i}));
+}

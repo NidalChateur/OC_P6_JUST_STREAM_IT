@@ -2,7 +2,7 @@
   "name": "oc_p6_just_stream_it",
   "version": "1.0.0",
   "description": "<center> JustStreamIt </center>",
-  "main": "index.js",
+  "main": "./js/app.js",
   "scripts": {
     "sass": "sass ./sass/main.scss:./css/style.css --style compressed",
     "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
