@@ -36,38 +36,32 @@
   font-size: 1.5rem;
 }
 
-@mixin legend($color, $top) {
-  @include inline_block_relative;
-  padding: 8px;
-  height: 3rem;
-  width: 17rem;
-  text-align: right;
-  @include border_style($color, border-bottom);
-  @include title_font_size;
-  top: $top;
-}
 @mixin category($number, $color) {
   .category#{$number} {
-    display: flex;
     &__best-film {
-      margin-top: 2%;
+      margin-top: -2%;
       display: flex;
       justify-content: space-around;
       align-items: center;
-      @include border_style($color, border);
       width: 70%;
-      height: 15vh;
+      height: 23vh;
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+      }
       &-image {
         display: flex;
         align-items: center;
         background-color: map-get($netflix-color, background_image);
-        height: 7rem;
+        height: 80%;
+        width: 10%;
         cursor: pointer;
+        border-radius: 10px;
       }
     }
 
     &__legend {
-      @include legend($color, 6vh);
+      @include inline_block_relative;
+      @include title_font_size;
     }
   }
 }
