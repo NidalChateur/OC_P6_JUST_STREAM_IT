@@ -5,13 +5,15 @@
   position: relative;
 }
 
-@mixin logo-size {
-  height: 1.5%;
-  width: 1.5%;
-}
-
 @mixin text_font_size {
   font-size: 1rem;
+}
+
+@mixin hover_img {
+  &:hover {
+    transition: border 0.4s ease;
+    @include border_style(map-get($netflix-color, white_color), border, 0.1rem);
+  }
 }
 
 @mixin header_footer_style {
@@ -28,8 +30,9 @@
   margin-left: 3%;
 }
 
-@mixin border_style($color, $border) {
-  #{$border}: 4px solid $color;
+@mixin border_style($color, $border, $size) {
+  #{$border}: $size solid $color;
+  border-radius: 15px;
 }
 
 @mixin title_font_size {
@@ -38,30 +41,69 @@
 
 @mixin category($number, $color) {
   .category#{$number} {
+    width: 70%;
     &__best-film {
+      & .next#{$number} {
+        display: none;
+        text-decoration: none;
+        // width: 0;
+      }
+      & .previous#{$number} {
+        text-decoration: none;
+      }
       margin-top: -2%;
       display: flex;
       justify-content: space-around;
       align-items: center;
-      width: 70%;
+
       height: 23vh;
-      @media screen and (max-width: 1000px) {
-        width: 100%;
+      &-btn {
+        font-size: 3rem;
       }
       &-image {
+        z-index: 1;
         display: flex;
         align-items: center;
-        background-color: map-get($netflix-color, background_image);
-        height: 80%;
-        width: 10%;
+        height: 20vh;
         cursor: pointer;
         border-radius: 10px;
+        @media screen and (max-width: 600px) {
+          height: 15vh;
+        }
+      }
+      &-number {
+        height: 25vh;
+        margin-right: -9%;
+        margin-left: -9%;
+        @media screen and (max-width: 1600px) {
+          width: 0;
+          margin: 0;
+        }
       }
     }
 
     &__legend {
-      @include inline_block_relative;
+      margin-bottom: 2%;
       @include title_font_size;
+      text-align: center;
+    }
+  }
+  #btn-previous#{$number} {
+    margin-right: 4%;
+    @media screen and (max-width: 1600px) {
+      margin-right: 0;
+    }
+    @media screen and (max-width: 600px) {
+      margin-right: -10%;
+      text-shadow: 0 0 3px rgb(0, 0, 0);
+      z-index: 2;
+    }
+  }
+  #btn-next#{$number} {
+    @media screen and (max-width: 600px) {
+      text-shadow: 0 0 1rem black;
+      margin-left: -10%;
+      z-index: 2;
     }
   }
 }

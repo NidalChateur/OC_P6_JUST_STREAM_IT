@@ -1,11 +1,15 @@
 @import "../utils/variables";
 
 body {
-  margin-left: 2%;
   background-color: map-get($netflix-color, black_color);
   font-family: $netflix-font-family;
   font-weight: bold;
   color: map-get($netflix-color, white_color);
+}
+main,
+header,
+footer {
+  opacity: 1;
 }
 
 a {
@@ -13,6 +17,5 @@ a {
 }
 
 span {
-  font-size: 3rem;
   cursor: pointer;
 }

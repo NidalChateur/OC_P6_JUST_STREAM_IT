@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/prefixed/style.css" />
+    <title>JustStreamIt</title>
+    <link rel="icon" href="./img/J.png" />
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="index.html" class="nav__logo">JUSTSTREAMIT</a>
+        <a href="index.html" class="nav__menu nav__menu--homapage">Home</a>
+        <span class="nav__menu nav__menu--normal nav__menu--category"
+          >Categories</span
+        >
+        <a href="#legend2" class="nav__menu nav__menu--normal nav__menu--hide"
+          >Best Films</a
+        >
+        <a href="#legend3" class="nav__menu nav__menu--normal nav__menu--hide"
+          >Science fiction</a
+        >
+        <a href="#legend4" class="nav__menu nav__menu--normal nav__menu--hide"
+          >Comedy</a
+        >
+        <a href="#legend5" class="nav__menu nav__menu--normal nav__menu--hide"
+          >Crime</a
+        >
+      </nav>
+    </header>
+    <section class="modal" id="modal">
+      <button class="modal__closeBtn">X</button>
+      <h3 class="modal__title"></h3>
+      <div>
+        <img src="" alt="" class="modal__image" />
+        <ul>
+          <li class="modal__date"></li>
+          <li class="modal__duration"></li>
+          <li class="modal__genres"></li>
+          <li class="modal__imdb"></li>
+          <li class="modal__directors"></li>
+          <li class="modal__countries"></li>
+          <li class="modal__budjet"></li>
+        </ul>
+      </div>
+      <p class="modal__actors">Actors :</p>
+      <p class="modal__description"></p>
+    </section>
+    <main>
+      <section class="category1">
+        <h2 class="category1__legend" id="legend1">Hero</h2>
+        <div class="category1__best-film">
+          <div class="category1__best-film-left">
+            <h3 class="category1__best-film-title" id="title"></h3>
+            <p class="category1__best-film-description"></p>
+          </div>
+          <div class="category1__best-film-right">
+            <img src="./img/1.png" alt="1" class="category1__best-film-one" />
+            <img src="" class="category1__best-film-image" alt="" id="c1f1" />
+          </div>
+        </div>
+      </section>
+      <section class="category2">
+        <h2 class="category2__legend" id="legend2">Best Films</h2>
+        <div class="category2__best-film">
+          <span class="category2__best-film-btn" id="btn-previous2">&lt;</span>
+          <img
+            src="./img/2.png"
+            alt="2"
+            class="category2__best-film-number previous2"
+          />
+          <img
+            src=""
+            class="category2__best-film-image previous2"
+            alt=""
+            id="c2f1"
+          />
+          <img
+            src="./img/3.png"
+            alt="3"
+            class="category2__best-film-number previous2"
+          />
+          <img
+            src=""
+            class="category2__best-film-image previous2"
+            alt=""
+            id="c2f2"
+          />
+          <img
+            src="./img/4.png"
+            alt="4"
+            class="category2__best-film-number previous2"
+          />
+          <img
+            src=""
+            class="category2__best-film-image previous2"
+            alt=""
+            id="c2f3"
+          />
+          <img src="./img/5.png" alt="5" class="category2__best-film-number" />
+          <img src="" class="category2__best-film-image" alt="" id="c2f4" />
+          <img
+            src="./img/6.png"
+            alt="6"
+            class="category2__best-film-number next2"
+          />
+          <img
+            src=""
+            class="category2__best-film-image next2"
+            alt=""
+            id="c2f5"
+          />
+          <img
+            src="./img/7.png"
+            alt="7"
+            class="category2__best-film-number next2"
+          />
+          <img
+            src=""
+            class="category2__best-film-image next2"
+            alt=""
+            id="c2f6"
+          />
+          <img
+            src="./img/8.png"
+            alt="8"
+            class="category2__best-film-number next2"
+          />
+          <img
+            src=""
+            class="category2__best-film-image next2"
+            alt=""
+            id="c2f7"
+          />
+          <span class="category2__best-film-btn" id="btn-next2">></span>
+        </div>
+      </section>
+      <section class="category3">
+        <h2 class="category3__legend" id="legend3">Science Fiction</h2>
+        <div class="category3__best-film">
+          <span class="category3__best-film-btn" id="btn-previous3">&lt;</span>
+          <img
+            src="./img/1.png"
+            alt="1"
+            class="category3__best-film-number previous3"
+          />
+          <img
+            src=""
+            class="category3__best-film-image previous3"
+            alt=""
+            id="c3f1"
+          />
+          <img
+            src="./img/2.png"
+            alt="2"
+            class="category3__best-film-number previous3"
+          />
+          <img
+            src=""
+            class="category3__best-film-image previous3"
+            alt=""
+            id="c3f2"
+          />
+          <img
+            src="./img/3.png"
+            alt="3"
+            class="category3__best-film-number previous3"
+          />
+          <img
+            src=""
+            class="category3__best-film-image previous3"
+            alt=""
+            id="c3f3"
+          />
+          <img src="./img/4.png" alt="4" class="category3__best-film-number" />
+          <img src="" class="category3__best-film-image" alt="" id="c3f4" />
+          <img
+            src="./img/5.png"
+            alt="5"
+            class="category3__best-film-number next3"
+          />
+          <img
+            src=""
+            class="category3__best-film-image next3"
+            alt=""
+            id="c3f5"
+          />
+          <img
+            src="./img/6.png"
+            alt="6"
+            class="category3__best-film-number next3"
+          />
+          <img
+            src=""
+            class="category3__best-film-image next3"
+            alt=""
+            id="c3f6"
+          />
+          <img
+            src="./img/7.png"
+            alt="7"
+            class="category3__best-film-number next3"
+          />
+          <img
+            src=""
+            class="category3__best-film-image next3"
+            alt=""
+            id="c3f7"
+          />
+          <span class="category3__best-film-btn" id="btn-next3">></span>
+        </div>
+      </section>
+      <section class="category4">
+        <h2 class="category4__legend" id="legend4">Comedy</h2>
+        <div class="category4__best-film">
+          <span class="category4__best-film-btn" id="btn-previous4">&lt;</span>
+          <img
+            src="./img/1.png"
+            alt="1"
+            class="category4__best-film-number previous4"
+          />
+          <img
+            src=""
+            class="category4__best-film-image previous4"
+            alt=""
+            id="c4f1"
+          />
+          <img
+            src="./img/2.png"
+            alt="2"
+            class="category4__best-film-number previous4"
+          />
+          <img
+            src=""
+            class="category4__best-film-image previous4"
+            alt=""
+            id="c4f2"
+          />
+          <img
+            src="./img/3.png"
+            alt="3"
+            class="category4__best-film-number previous4"
+          />
+          <img
+            src=""
+            class="category4__best-film-image previous4"
+            alt=""
+            id="c4f3"
+          />
+          <img src="./img/4.png" alt="4" class="category4__best-film-number" />
+          <img src="" class="category4__best-film-image" alt="" id="c4f4" />
+          <img
+            src="./img/5.png"
+            alt="5"
+            class="category4__best-film-number next4"
+          />
+          <img
+            src=""
+            class="category4__best-film-image next4"
+            alt=""
+            id="c4f5"
+          />
+          <img
+            src="./img/6.png"
+            alt="6"
+            class="category4__best-film-number next4"
+          />
+          <img
+            src=""
+            class="category4__best-film-image next4"
+            alt=""
+            id="c4f6"
+          />
+          <img
+            src="./img/7.png"
+            alt="7"
+            class="category4__best-film-number next4"
+          />
+          <img
+            src=""
+            class="category4__best-film-image next4"
+            alt=""
+            id="c4f7"
+          />
+          <span class="category4__best-film-btn" id="btn-next4">></span>
+        </div>
+      </section>
+      <section class="category5">
+        <h2 class="category5__legend" id="legend5">Crime</h2>
+        <div class="category5__best-film">
+          <span class="category5__best-film-btn" id="btn-previous5">&lt;</span>
+          <img
+            src="./img/1.png"
+            alt="1"
+            class="category5__best-film-number previous5"
+          />
+          <img
+            src=""
+            class="category5__best-film-image previous5"
+            alt=""
+            id="c5f1"
+          />
+          <img
+            src="./img/2.png"
+            alt="2"
+            class="category5__best-film-number previous5"
+          />
+          <img
+            src=""
+            class="category5__best-film-image previous5"
+            alt=""
+            id="c5f2"
+          />
+          <img
+            src="./img/3.png"
+            alt="3"
+            class="category5__best-film-number previous5"
+          />
+          <img
+            src=""
+            class="category5__best-film-image previous5"
+            alt=""
+            id="c5f3"
+          />
+          <img src="./img/4.png" alt="4" class="category5__best-film-number" />
+          <img src="" class="category5__best-film-image" alt="" id="c5f4" />
+          <img
+            src="./img/5.png"
+            alt="5"
+            class="category5__best-film-number next5"
+          />
+          <img
+            src=""
+            class="category5__best-film-image next5"
+            alt=""
+            id="c5f5"
+          />
+          <img
+            src="./img/6.png"
+            alt="6"
+            class="category5__best-film-number next5"
+          />
+
+          <img
+            src=""
+            class="category5__best-film-image next5"
+            alt=""
+            id="c5f6"
+          />
+          <img
+            src="./img/7.png"
+            alt="7"
+            class="category5__best-film-number next5"
+          />
+          <img
+            src=""
+            class="category5__best-film-image next5"
+            alt=""
+            id="c5f7"
+          />
+          <span class="category5__best-film-btn" id="btn-next5">></span>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a href="mailto:juststreamit@contact.com" class="footer__social-networks"
+        >Contact</a
+      >
+      <a
+        href="https://fr-fr.facebook.com/"
+        target="_blank"
+        class="footer__social-networks"
+        >Facebook</a
+      >
+      <a
+        href="https://www.instagram.com/"
+        target="_blank"
+        class="footer__social-networks"
+        >Instagram</a
+      >
+      <a
+        href="https://twitter.com/"
+        target="_blank"
+        class="footer__social-networks"
+        >Twitter</a
+      >
+      <a
+        href="https://www.youtube.com/"
+        target="_blank"
+        class="footer__social-networks"
+        >Youtube</a
+      >
+    </footer>
+  </body>
+</html>
