@@ -1,0 +1,21 @@
+{
+  "name": "oc_p6_just_stream_it",
+  "version": "1.0.0",
+  "description": "<center> JustStreamIt </center>",
+  "main": "./js/app.js",
+  "scripts": {
+    "sass": "sass ./sass/main.scss:./css/style.css --style compressed",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NidalChateur/OC_P6_JUST_STREAM_IT.git"
+  },
+  "author": "Nidal Chateur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NidalChateur/OC_P6_JUST_STREAM_IT/issues"
+  },
+  "homepage": "https://github.com/NidalChateur/OC_P6_JUST_STREAM_IT#readme",
+  "browserslist": "last 4 versions"
+}

@@ -1,0 +1,73 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+section {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 5%;
+}
+
+.category1 {
+  &__best-film {
+    margin: auto;
+    @media screen and (max-width: 1000px) {
+      border: none;
+      display: flex;
+      justify-content: center;
+    }
+    display: flex;
+    justify-content: space-between;
+    margin-top: -0.5%;
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+    height: 30%;
+    @include border_style(map-get($netflix-color, white_color), border, 4px);
+    color: map-get($netflix-color, white_color);
+    &-title {
+      @include inline_block_relative;
+      bottom: 1.5rem;
+      @include margin_left;
+      cursor: pointer;
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
+    &-left {
+      width: 40%;
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
+
+    &-description {
+      font-weight: lighter;
+      @include margin_left;
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
+    &-image {
+      @include inline_block_relative;
+      cursor: pointer;
+      margin-right: 1rem;
+      height: 30vh;
+    }
+    &-one {
+      @include inline_block_relative;
+      margin-top: -5%;
+      margin-bottom: -5%;
+      height: 35vh;
+      margin-right: -15%;
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
+  }
+  &__legend {
+    text-align: center;
+  }
+}
+
+@for $i from 2 through 5 {
+  @include category($i, map-get($netflix-color, category#{$i}));
+}

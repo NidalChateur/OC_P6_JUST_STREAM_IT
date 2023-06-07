@@ -1,0 +1,28 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.nav {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 3%;
+  &__logo {
+    @include inline_block_relative;
+    color: map-get($netflix-color, red_color);
+    @include title_font_size;
+    margin-right: 5%;
+  }
+  &__menu {
+    @include header_footer_style;
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+    &--normal {
+      font-weight: normal;
+    }
+
+    &--hide {
+      transition: opacity 0.5s ease-in-out;
+      opacity: 0;
+    }
+  }
+}

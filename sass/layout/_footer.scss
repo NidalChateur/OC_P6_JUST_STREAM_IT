@@ -1,0 +1,14 @@
+@import "../utils/mixins";
+
+footer {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    @include header_footer_style;
+    display: block;
+    font-weight: lighter;
+  }
+}

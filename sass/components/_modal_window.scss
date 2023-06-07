@@ -1,0 +1,64 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.modal {
+  display: none; /* Cacher initialement la fenêtre modale */
+
+  //   transition: height 0.5s ease;
+
+  // text-align: center;
+  position: fixed; /* Position fixe pour la superposer */
+  z-index: 4; /* Position au-dessus du contenu */
+  left: 14vw;
+  top: 0.5vw;
+
+  width: 70%;
+  height: 96%;
+  overflow: auto; /* Permettre le défilement si le contenu dépasse la fenêtre */
+  background-color: map-get($netflix-color, black_color);
+  border: double 0.5rem;
+  border-radius: 15px;
+  & p {
+    line-height: 1.6rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 4%;
+  }
+  & img {
+    display: inline-block;
+    border-radius: 10px;
+    height: 35vh;
+  }
+  & div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
+
+  & h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: -1%;
+  }
+  & li {
+    padding-left: 1%;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    margin-bottom: 2%;
+    // border-bottom: solid 0.3px;
+    list-style: none;
+    text-indent: -2%;
+    font-weight: normal;
+  }
+  &__closeBtn {
+    @media screen and (max-width: 1000px) {
+      margin-left: 92%;
+      margin-top: 2%;
+    }
+    // padding: 0;
+    margin-left: 92%;
+    margin-top: 1%;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}

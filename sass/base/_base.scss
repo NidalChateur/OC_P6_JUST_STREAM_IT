@@ -1,0 +1,21 @@
+@import "../utils/variables";
+
+body {
+  background-color: map-get($netflix-color, black_color);
+  font-family: $netflix-font-family;
+  font-weight: bold;
+  color: map-get($netflix-color, white_color);
+}
+main,
+header,
+footer {
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  cursor: pointer;
+}

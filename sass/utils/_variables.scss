@@ -1,0 +1,18 @@
+$white_color: #e5e5e5;
+
+$netflix-color: (
+  black_color: #141414,
+  white_color: $white_color,
+  red_color: #e50914,
+  darken_white: darken($white_color, 20%),
+  ligthen_white: lighten($white_color, 20%),
+  background_image: #494343,
+  category1: #f3f39e,
+  category2: #74e299,
+  category3: #ffca69,
+  category4: #459ce8,
+  category5: #824e82,
+);
+
+$netflix-font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+  sans-serif;
