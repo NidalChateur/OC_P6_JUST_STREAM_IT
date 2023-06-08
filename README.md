@@ -1,5 +1,5 @@
 <center>
-JustStreamIt
+JustStreamIt inpired by Netflix.
 </center> 
 
 <p align="center">
